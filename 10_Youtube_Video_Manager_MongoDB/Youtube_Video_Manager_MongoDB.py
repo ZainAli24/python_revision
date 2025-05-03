@@ -1,14 +1,14 @@
 # 1. First way :
 # import pymongo
 
-# client = pymongo.MongoClient("mongodb+srv://youtube21:12youtube@cluster0forlearning.rprbrnq.mongodb.net/ytmanager")
+# client = pymongo.MongoClient("mongodb+srv://zain:sameer@cluster0forlearning.rprbrnq.mongodb.net/ytmanager")
 # Not a Good idea to inclide id and password in the code. Use environment variables or a config file.
 
 # 2. Second way:
 from pymongo import MongoClient
 from bson.objectid import ObjectId # bson json ka bara bhai hai.
 
-client = MongoClient("mongodb+srv://youtube21:12youtube@cluster0forlearning.rprbrnq.mongodb.net/")
+client = MongoClient("mongodb+srv://zain:sameer@cluster0forlearning.rprbrnq.mongodb.net/")
 
 db = client["ytmanager"] # Database name
 videos_collection = db["videos"] # Collection name
